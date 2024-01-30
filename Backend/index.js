@@ -26,6 +26,16 @@ app.get("/books",(req,res) => {
     })
 })
 
+app.post("/books",(req,res) => {
+    const que = "INSERT INTO books (`title`,`description`,`cover`) VALUES (?)"
+    const values = ["title from backend","description from backend","cover pic form backend"]
+
+    db.query(que,[values],(err,data) => {
+        if(err) return res.json(err);
+        return res.json(data);
+    })
+})
+
 app.listen(8800, () => {
     console.log("Connected to backend!");
 })

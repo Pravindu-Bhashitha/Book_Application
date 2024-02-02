@@ -54,6 +54,23 @@ app.delete("/books/:id",(req,res)=>{
         return res.json("Book has been deleted");
     })
 })
+
+app.put("/books/:id",(req,res)=>{
+    const bookId = req.params.id;
+    const que = "UPDATE books SET `title` = ?, `description` = ?, `price` = ?, `cover` = ? WHERE id = ?"
+
+    const values = [
+        req.body.title,
+        req.body.description,
+        req.body.price,
+        req.body.cover
+    ]
+
+    db.query(que,[...values,bookId],(err,data)=>{
+        if(err) return res.json(err);
+        return res.json("Book has been updated");
+    })
+})
 app.listen(8800, () => {
     console.log("Connected to backend!");
 })

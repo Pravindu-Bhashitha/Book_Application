@@ -35,3 +35,27 @@ img{
     background-color: #fff;
     cursor: pointer;
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.input{
+    width: 250px;
+    padding: 10px;
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+    background-color: rgb(244, 142, 74);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}

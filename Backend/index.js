@@ -49,7 +49,7 @@ app.delete("/books/:id",(req,res)=>{
     const bookId = req.params.id;
     const que = "DELETE FROM books WHERE id = ?"
 
-    db.query(q,[bookId],(err,data)=>{
+    db.query(que,[bookId],(err,data)=>{
         if(err) return res.json(err);
         return res.json("Book has been deleted");
     })

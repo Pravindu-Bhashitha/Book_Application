@@ -13,7 +13,7 @@
 
 img{
     width: 200px;
-    height: 300px;
+    height: 275px;
     object-fit: cover;
     background-color: aqua;
 }
@@ -25,15 +25,29 @@ img{
     padding: 3px 6px;
     background-color: #fff;
     cursor: pointer;
+    height: 30px;
 }
 
 .update{
     border: 1px solid rgb(204, 204, 243);
+    text-decoration: none;
     border-radius: 2px;
     color: rgb(139, 139, 234);
     padding: 3px 6px;
     background-color: #fff;
     cursor: pointer;
+}
+
+.update-button{
+    border: 1px solid rgb(113, 113, 226);
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: #fff;
+    height: 30px;
+}
+
+.update-button-link{
+    text-decoration: none;
 }
 
 .form{
@@ -50,7 +64,22 @@ img{
     border-radius: 5px;
 }
 
-.formButton{
+.add-button{
+    border-radius: 2px;
+    color: greenyellow;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.add-button-link{
+    text-decoration: none;
+    color: greenyellow;
+}
+
+/* .formButton{
     border: none;
     padding: 10px;
     background-color: rgb(244, 142, 74);
@@ -58,4 +87,27 @@ img{
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+} */
+
+.shop-name-header{
+    color: blueviolet;
 }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-20px);
+    }
+  
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .shop-name-header {
+    animation: bounce 2s infinite;
+  }
+  

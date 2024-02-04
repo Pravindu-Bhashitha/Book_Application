@@ -8,6 +8,12 @@
   border-radius: 5px;
 }
 
+.formButton:hover {
+  color: rgb(120, 223, 64);
+  background-color: white;
+  border: 1px solid rgb(120, 223, 64);
+}
+
 .add-new-book-title {
   animation: bounce 2s infinite;
   color: rgb(120, 223, 64);
@@ -31,13 +37,14 @@
   }
 }
 
-.add-inputs{
-    height: 25px;
-    border-radius: 2px;
-    border: 1px solid grey;
+.add-inputs {
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid grey;
 }
 
-.add-inputs:focus{
-    border: 1px solid rgb(120, 223, 64);
-    color: rgb(44, 41, 41);
+.add-inputs:focus {
+  border-color: rgb(120, 223, 64);
+  color: rgb(44, 41, 41);
+  outline: none;
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import './Books.css';
+import "./Books.css";
 
 const Books = () => {
   const [books, setBooks] = useState([]);
@@ -19,14 +19,14 @@ const Books = () => {
     fetchAllBooks();
   }, []);
 
-const handleDelete = async (id) =>{
-    try{
-        await axios.delete("http://localhost:8800/books/"+id)
-        window.location.reload()
-    }catch (err) {
-        console.log(err);
-      }
-}
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete("http://localhost:8800/books/" + id);
+      window.location.reload();
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <div>
       <h1 className="shop-name-header">Lama Book Shop</h1>
@@ -37,13 +37,21 @@ const handleDelete = async (id) =>{
             <h2 className="book-title">{book.title}</h2>
             <p className="book-description">{book.description}</p>
             <span>Rs.{book.price}/=</span>
-            <button className="delete" onClick={()=>handleDelete(book.id)}>Delete</button>
-            <button className="update-button"><Link to={`/update/${book.id}`} className="update-button-link">Update</Link></button>
+            <button className="delete" onClick={() => handleDelete(book.id)}>
+              Delete
+            </button>
+            <button className="update-button">
+              <Link to={`/update/${book.id}`} className="update-button-link">
+                Update
+              </Link>
+            </button>
           </div>
         ))}
       </div>
       <button className="add-button">
-        <Link to="/add" className="add-button-link">Add New Book</Link>
+        <Link to="/add" className="add-button-link">
+          Add New Book
+        </Link>
       </button>
     </div>
   );

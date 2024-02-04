@@ -38,16 +38,6 @@ img {
   transition: 0.5s;
 }
 
-/* .update{
-    border: 1px solid rgb(204, 204, 243);
-    text-decoration: none;
-    border-radius: 2px;
-    color: rgb(139, 139, 234);
-    padding: 3px 6px;
-    background-color: #fff;
-    cursor: pointer;
-} */
-
 .update-button {
   border: transparent;
   background-color: transparent;

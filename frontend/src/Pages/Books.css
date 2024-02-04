@@ -1,37 +1,41 @@
-.books{
-    display: flex;
-    gap: 10px;
+.books {
+  display: flex;
+  gap: 10px;
 }
 
-.book{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
+.book {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
-img{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    background-color: aqua;
+img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  background-color: aqua;
 }
 
-.delete{
-    border: 1px solid rgb(245, 191, 191);
-    border-radius: 2px;
-    color: rgb(242, 100, 100);
-    padding: 3px 6px;
-    background-color: #fff;
-    cursor: pointer;
-    height: 30px;
+.book-description {
+  color: rgb(112, 104, 104);
 }
 
-.delete:hover{
-    background-color: rgb(242, 100, 100);
-    color: #fff;
-    transition: 0.5s;
+.delete {
+  border: 1px solid rgb(245, 191, 191);
+  border-radius: 2px;
+  color: rgb(242, 100, 100);
+  padding: 3px 6px;
+  background-color: #fff;
+  cursor: pointer;
+  height: 30px;
+}
+
+.delete:hover {
+  background-color: rgb(242, 100, 100);
+  color: #fff;
+  transition: 0.5s;
 }
 
 /* .update{
@@ -44,93 +48,104 @@ img{
     cursor: pointer;
 } */
 
-.update-button{
-    border: transparent;
-    background-color: transparent;
-    margin-top: 10px;
+.update-button {
+  border: transparent;
+  background-color: transparent;
+  margin-top: 10px;
 }
 
-.update-button-link{
-    text-decoration: none;
-    border: 1px solid rgb(113, 113, 226);
-    border-radius: 2px;
-    cursor: pointer;
-    background-color: #fff;
-    height: 30px;
-    color: rgb(139, 139, 234);
-    padding: 5px 5px;
+.update-button-link {
+  text-decoration: none;
+  border: 1px solid rgb(113, 113, 226);
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #fff;
+  height: 30px;
+  color: rgb(139, 139, 234);
+  padding: 5px 5px;
 }
 
-.update-button-link:hover{
-    color: #fff;
-    background-color: rgb(139, 139, 234);
-    transition: 0.5s;
+.update-button-link:hover {
+  color: #fff;
+  background-color: rgb(139, 139, 234);
+  transition: 0.5s;
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.input{
-    width: 250px;
-    padding: 10px;
-    height: 100px;
-    border: 1px solid grey;
-    border-radius: 5px;
+.input {
+  width: 250px;
+  padding: 10px;
+  height: 100px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
-.add-button{
-    border: transparent;
-    background-color: transparent;
-    margin-top: 25px;
+.add-button {
+  border: transparent;
+  background-color: transparent;
+  margin-top: 25px;
 }
 
-.add-button-link{
-    text-decoration: none;
-    color: rgb(134, 213, 14);
-    border: 1px solid rgb(177, 237, 87);
-    padding: 10px 10px;
-    border-radius: 2px;
-    cursor: pointer;
+.add-button-link {
+  text-decoration: none;
+  color: rgb(134, 213, 14);
+  border: 1px solid rgb(177, 237, 87);
+  padding: 10px 10px;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
-.add-button-link:hover{
-    color: #fff;
-    background-color: rgb(134, 213, 14);
-    transition: 0.5s;
+.add-button-link:hover {
+  color: #fff;
+  background-color: rgb(134, 213, 14);
+  transition: 0.5s;
 }
 
-/* .formButton{
-    border: none;
-    padding: 10px;
-    background-color: rgb(244, 142, 74);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-} */
-
-.shop-name-header{
-    color: blueviolet;
+.shop-name-header {
+  color: blueviolet;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-  
-    40% {
-      transform: translateY(-20px);
-    }
-  
-    60% {
-      transform: translateY(-10px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  .shop-name-header {
-    animation: bounce 2s infinite;
+
+  40% {
+    transform: translateY(-20px);
   }
-  
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.shop-name-header {
+  animation: bounce 2s infinite;
+}
+
+.book-title {
+  animation: rollIn 3s infinite;
+}
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+    color: rgb(237, 156, 156);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    color: red;
+  }
+}

@@ -1,0 +1,43 @@
+.formButton {
+  border: none;
+  padding: 10px;
+  background-color: rgb(120, 223, 64);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-new-book-title {
+  animation: bounce 2s infinite;
+  color: rgb(120, 223, 64);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+.add-inputs{
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid grey;
+}
+
+.add-inputs:focus{
+    border: 1px solid rgb(120, 223, 64);
+    color: rgb(44, 41, 41);
+}

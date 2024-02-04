@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './Add.css';
 
 const Add = () => {
   const [book, setBook] = useState({
@@ -30,11 +31,11 @@ const Add = () => {
 
   return (
     <div className="form">
-      <h1>Add New Book</h1>
-      <input type="text" placeholder="Title" onChange={handleChange} name="title" />
-      <input type="text" placeholder="Description" onChange={handleChange} name="description"/>
-      <input type="number" placeholder="Price" onChange={handleChange} name="price"/>
-      <input type="text" placeholder="Cover" onChange={handleChange} name="cover"/>
+      <h1 className="add-new-book-title">Add New Book</h1>
+      <input type="text" placeholder="Title" onChange={handleChange} name="title" className="add-inputs"/>
+      <input type="text" placeholder="Description" onChange={handleChange} name="description" className="add-inputs"/>
+      <input type="number" placeholder="Price" onChange={handleChange} name="price" className="add-inputs"/>
+      <input type="text" placeholder="Cover" onChange={handleChange} name="cover" className="add-inputs"/>
       <button onClick={handleClick} className="formButton">Add</button>
     </div>
   );

@@ -34,9 +34,9 @@ const handleDelete = async (id) =>{
         {books.map((book) => (
           <div className="book" key={book.id}>
             {book.cover && <img src={book.cover} alt="book cover" />}
-            <h2>{book.title}</h2>
-            <p>{book.description}</p>
-            <span>{book.price}</span>
+            <h2 className="book-title">{book.title}</h2>
+            <p className="book-description">{book.description}</p>
+            <span>Rs.{book.price}/=</span>
             <button className="delete" onClick={()=>handleDelete(book.id)}>Delete</button>
             <button className="update-button"><Link to={`/update/${book.id}`} className="update-button-link">Update</Link></button>
           </div>

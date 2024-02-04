@@ -13,7 +13,7 @@
 
 img{
     width: 200px;
-    height: 275px;
+    height: 250px;
     object-fit: cover;
     background-color: aqua;
 }
@@ -28,7 +28,13 @@ img{
     height: 30px;
 }
 
-.update{
+.delete:hover{
+    background-color: rgb(242, 100, 100);
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* .update{
     border: 1px solid rgb(204, 204, 243);
     text-decoration: none;
     border-radius: 2px;
@@ -36,18 +42,29 @@ img{
     padding: 3px 6px;
     background-color: #fff;
     cursor: pointer;
-}
+} */
 
 .update-button{
+    border: transparent;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.update-button-link{
+    text-decoration: none;
     border: 1px solid rgb(113, 113, 226);
     border-radius: 2px;
     cursor: pointer;
     background-color: #fff;
     height: 30px;
+    color: rgb(139, 139, 234);
+    padding: 5px 5px;
 }
 
-.update-button-link{
-    text-decoration: none;
+.update-button-link:hover{
+    color: #fff;
+    background-color: rgb(139, 139, 234);
+    transition: 0.5s;
 }
 
 .form{
@@ -65,18 +82,24 @@ img{
 }
 
 .add-button{
-    border-radius: 2px;
-    color: greenyellow;
-    border: 1px solid greenyellow;
-    cursor: pointer;
-    height: 30px;
-    background-color: #fff;
-    margin-top: 10px;
+    border: transparent;
+    background-color: transparent;
+    margin-top: 25px;
 }
 
 .add-button-link{
     text-decoration: none;
-    color: greenyellow;
+    color: rgb(134, 213, 14);
+    border: 1px solid rgb(177, 237, 87);
+    padding: 10px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.add-button-link:hover{
+    color: #fff;
+    background-color: rgb(134, 213, 14);
+    transition: 0.5s;
 }
 
 /* .formButton{

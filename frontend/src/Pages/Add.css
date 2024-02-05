@@ -48,3 +48,16 @@
   color: rgb(44, 41, 41);
   outline: none;
 }
+
+.form {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

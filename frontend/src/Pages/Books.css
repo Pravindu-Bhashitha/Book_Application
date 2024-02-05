@@ -139,3 +139,71 @@ img {
     color: red;
   }
 }
+
+.Modal-class {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 20px;
+  height: 200px;
+  margin: 200px 400px;
+  width: 600px;
+  border: 1px solid rgb(222, 92, 92);
+}
+
+.Modal-heading {
+  text-align: center;
+  color: rgb(222, 92, 92);
+  margin-top: 40px;
+}
+
+.delete-component-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 40px 175px;
+}
+
+.delete-confirming-btn {
+  border: 1px solid rgb(245, 191, 191);
+  border-radius: 2px;
+  color: rgb(242, 100, 100);
+  padding: 3px 6px;
+  background-color: #fff;
+  cursor: pointer;
+  height: 30px;
+}
+
+.delete-confirming-btn:hover {
+  color: rgb(242, 100, 100);
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.cancel-confirmation-btn {
+  border: 1px solid rgb(230, 182, 124);
+  border-radius: 2px;
+  color: rgb(235, 138, 20);
+  padding: 3px 6px;
+  background-color: #fff;
+  cursor: pointer;
+  height: 30px;
+}
+
+.cancel-confirmation-btn:hover {
+  color: rgb(235, 138, 20);
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.Home-page {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
